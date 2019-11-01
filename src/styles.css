@@ -1,0 +1,215 @@
+*:focus {
+  outline: none;
+}
+
+.App {
+  font-family: Arial;
+  text-align: center;
+}
+p {
+  margin: 0 !important;
+}
+
+.flex {
+  display: flex;
+}
+.none {
+  display: none;
+}
+
+/* BODY */
+.yamiochi {
+  width: 600px;
+  height: 100vh;
+  margin: 0 auto;
+  border-right: solid 1px #e6ecf0;
+  border-left: solid 1px #e6ecf0;
+}
+/* ホーム */
+.AddTodo {
+  width: 100%;
+}
+.AddTodo form {
+  width: 500px;
+}
+
+.List h2,
+.AddTodo h2 {
+  padding: 15px;
+  font-size: 19px;
+  color: #14171a;
+  border-top: solid 1px #e6ecf0;
+  border-bottom: solid 1px #e6ecf0;
+  margin: 0;
+}
+.List h2 {
+  border-top: solid 15px #e6ecf0;
+}
+
+/* ulを上下逆にして最新ツイートが上になるように設定 */
+ul {
+  transform: rotate(180deg);
+  list-style: none;
+  width: 100%;
+  margin: 0 !important;
+}
+ul > li {
+  transform: rotate(-180deg);
+}
+
+/* ツイートフィールド */
+li {
+  padding: 10px 15px;
+  border-bottom: solid 1px #e6ecf0;
+}
+li:hover {
+  background: #f5f8fa;
+}
+
+.userIcon {
+  width: 50px;
+  height: 50px;
+  border-radius: 90px;
+  margin: 0 5px;
+}
+/* 背景が白のアイコンのみ */
+.borderIcon {
+  width: 48px;
+  height: 48px;
+  border: solid 1px #ccc;
+}
+.tweetBox {
+  margin: 0 5px;
+  /* padding-bottom: 10px; */
+  width: 100%;
+}
+.userName,
+.date {
+  display: inline;
+}
+.userName {
+  font-size: 15px;
+  font-weight: 800;
+  color: #14171a;
+}
+.userName img {
+  height: 12px;
+  padding: 0 5px;
+}
+.userName span {
+  color: #657786;
+  font-weight: 500;
+}
+p.tweet {
+  max-width: 500px;
+}
+/* .nadenade img:hover */
+
+/* ボタン系 */
+.outerBtn {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10px;
+}
+button,
+input {
+  color: #fff;
+  border: none;
+  border-radius: 90px;
+  font-size: 15px;
+}
+.tweetBox button,
+.AddTodo input:hover {
+  background-color: #1da1f2;
+}
+.tweetBox button:hover,
+.AddTodo input {
+  background-color: #8ed0f9;
+}
+.tweetBox button {
+  margin-top: 37px;
+  padding: 8px 15px;
+  font-size: 12px;
+}
+
+.tweetBox button :active {
+  color: #1da1f2;
+  background-color: #fff;
+}
+
+/* ホーム */
+.AddTodo input {
+  padding: 10px 20px;
+  display: block;
+}
+.AddTodo .flex {
+  padding: 10px 15px;
+}
+textarea {
+  font-size: 19px;
+  color: #14171a;
+  font-weight: 400;
+  width: 100%;
+  border: none;
+}
+/* ナデナデ */
+.nadenade {
+  padding: 0 30px;
+}
+.nadeBox p {
+  margin: 0;
+  line-height: 30px;
+  padding: 0 5px;
+}
+.nadeBox .hand {
+  margin-left: 1em;
+}
+.nadeBox p.zero {
+  color: rgba(255, 99, 71, 0);
+}
+.nadeBox a img {
+  transition: 0.2s;
+  width: 25px;
+}
+
+.nadeBox a img:active {
+  -webkit-transform: rotate(80deg);
+  transform: rotate(80deg);
+  transition: 0.2s;
+  background-color: pink;
+}
+
+.nadeBox:hover .balloon3 {
+  opacity: 1;
+  transition: 0.8s;
+}
+.balloon3 {
+  opacity: 0;
+  transition: 0.8s;
+  position: relative;
+  display: inline-block;
+  margin: 0.5em 0;
+  padding: 0 5px;
+  width: 60px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 100;
+  background: #70a6ff;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.balloon3:before {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 55%;
+  margin-left: -15px;
+  border: 10px solid transparent;
+  border-top: 15px solid #70a6ff;
+  z-index: 0;
+}
